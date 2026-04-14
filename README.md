@@ -4,6 +4,9 @@ A full-stack **Online Voting System** built using **Python (Flask)** and **Postg
 - Implemented user authentication and admin panel
 - Ensured secure one-user-one-vote mechanism
 - Deployed application on cloud (Render)
+
+# Live demo
+https://online-voting-system-1-uzkk.onrender.com
 ## 🚀 Features
 
 ### 👤 User Features
