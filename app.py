@@ -1,16 +1,22 @@
 from flask import Flask, render_template, request, redirect, session
 import psycopg2
+import os
+
 
 app = Flask(__name__)
 app.secret_key = "secret123"
 
 def get_db():
-    return psycopg2.connect(
-        host="localhost",
-        database="voting_db",
-        user="postgres",
-        password="Sneha@40"  
-    )
+    # return psycopg2.connect(
+    #     host="localhost",
+    #     database="voting_db",
+    #     user="postgres",
+    #     password="Sneha@40"  
+    # )
+    url = os.environ.get("DATABASE_URL")
+    if url.startswith("postgres://"):
+        url = url.replace("postgres://", "postgresql://", 1)
+    return psycopg2.connect(url)
 
 @app.route('/')
 def home():
