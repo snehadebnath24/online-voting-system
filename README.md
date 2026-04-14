@@ -1,6 +1,9 @@
 # online-voting-system
 A full-stack **Online Voting System** built using **Python (Flask)** and **PostgreSQL**, with secure user authentication and an admin panel for managing candidates.
-
+- Developed a web-based voting system using Flask and PostgreSQL
+- Implemented user authentication and admin panel
+- Ensured secure one-user-one-vote mechanism
+- Deployed application on cloud (Render)
 ## 🚀 Features
 
 ### 👤 User Features
